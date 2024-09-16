@@ -38,11 +38,11 @@ Follow the instructions below to prepare to run the module on GCP.
 
 <summary>Setting up GCP</summary>
 
-* Create a Google Cloud account
-* Create a Google Cloud project
-* Enable billing for your Google Cloud project
-* Create a Vertex AI Workbench instance
-* Clone this repository into your Workbench instance
+1. Create a Google Cloud account
+2. Create a Google Cloud project
+3. Enable billing for your Google Cloud project
+4. Create a Vertex AI Workbench instance
+5. Clone this repository into your Workbench instance
 
 </details>
 
