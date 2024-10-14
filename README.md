@@ -42,7 +42,8 @@ Follow the instructions below to prepare to run the module on GCP.
 2. Create a Google Cloud project
 3. Enable billing for your Google Cloud project
 4. Create a Vertex AI Workbench instance
-5. Clone this repository into your Workbench instance
+5. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
+6. Clone this repository into JupyterLab
 
 </details>
 
