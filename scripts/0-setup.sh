@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# update conda
+conda update -n base -c conda-forge conda
+
+# initialize conda
+conda init
+
 # set up Bioconda
 conda config --add channels bioconda
 conda config --add channels conda-forge
