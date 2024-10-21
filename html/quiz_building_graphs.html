@@ -14796,6 +14796,27 @@ var questionshOGdVdrXyPlU=[
         ]
     },
     {
+        "question": "Choose all the reasons why you might not want to run a partition step before building your graph",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Your genome has chromosome to chromosome translocations.",
+                "correct": true,
+                "feedback": "True, in chromosome level assemblies, partitions are often broken up by chromosome and these chromosome to chromosome translocations may not be identified. If they are critical to your research, you might want to avoid partitioning."
+            },
+            {
+                "answer": "Your genome is polyploid.",
+                "correct": true,
+                "feedback": "True, polyploid organisms have muliple copies of each chromosome whose DNA sequence is related. If understanding presence/absence variation and shuffling of genetic material between homoeologs is important to your research, you might want to avoid paritioning."
+            },
+            {
+                "answer": "Your genome is large (more than 1 Gb).",
+                "correct": false,
+                "feedback": "False, large genomes benefit from the parallelization that partitioning allows and their multiple chromosomes make natural breakpoints for the partitions. A large genome is not sufficient reason to avoid partitioning."
+            }
+        ]
+    },
+    {
         "question": "What type of alignments feed into PGGB?",
         "type": "multiple_choice",
         "answers": [
@@ -14855,27 +14876,6 @@ var questionshOGdVdrXyPlU=[
                 "answer": "seqwish",
                 "correct": true,
                 "feedback": "True, seqwish converts the alignments into a pangenomic graph."
-            }
-        ]
-    },
-    {
-        "question": "Choose all the reasons why you might not want to run a partition step before building your graph",
-        "type": "many_choice",
-        "answers": [
-            {
-                "answer": "Your genome has chromosome to chromosome translocations.",
-                "correct": true,
-                "feedback": "True, in chromosome level assemblies, partitions are often broken up by chromosome and these chromosome to chromosome translocations may not be identified. If they are critical to your research, you might want to avoid partitioning."
-            },
-            {
-                "answer": "Your genome is polyploid.",
-                "correct": true,
-                "feedback": "True, polyploid organisms have muliple copies of each chromosome whose DNA sequence is related. If understanding presence/absence variation and shuffling of genetic material between homoeologs is important to your research, you might want to avoid paritioning."
-            },
-            {
-                "answer": "Your genome is large (more than 1 Gb).",
-                "correct": false,
-                "feedback": "False, large genomes benefit from the parallelization that partitioning allows and their multiple chromosomes make natural breakpoints for the partitions. A large genome is not sufficient reason to avoid partitioning."
             }
         ]
     }
