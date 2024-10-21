@@ -14779,17 +14779,17 @@ var questionshOGdVdrXyPlU=[
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "The graph is biased toward the reference.",
+                "answer": "A PGGB graph is biased toward the reference.",
                 "correct": false,
                 "feedback": "False, try again."
             },
             {
-                "answer": "It doesn't. The graph is reference-free.",
+                "answer": "It doesn't. A PGGB graph is reference-free.",
                 "correct": true,
-                "feedback": "True, all assemblies have are treated equally."
+                "feedback": "True, all assemblies are treated equally."
             },
             {
-                "answer": "The reference is always the longest segments in the graph.",
+                "answer": "The reference always has the longest segments in a PGGB graph.",
                 "correct": false,
                 "feedback": "False, try again."
             }
@@ -14812,12 +14812,12 @@ var questionshOGdVdrXyPlU=[
             {
                 "answer": "Each assembly aligned back to the reference",
                 "correct": false,
-                "feedback": "False, PGGB is reference-free, remember?."
+                "feedback": "False, PGGB is reference-free, remember?"
             }
         ]
     },
     {
-        "question": "PGGB's normalization results in progressive linearization, which means that structural variation (SVs) cannot be detected. (True or False)",
+        "question": "PGGB's normalization results in progressive linearization, which means that structural variants (SVs) cannot be detected. (True or False)",
         "type": "multiple_choice",
         "answers": [
             {
@@ -14863,19 +14863,19 @@ var questionshOGdVdrXyPlU=[
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Your genome has chromosome to chromosome translocations that are important to your analysis.",
+                "answer": "Your genome has chromosome to chromosome translocations.",
                 "correct": true,
-                "feedback": "True, in chromosome level assemblies, partitions are often broken up by chromosome and these translocations may not be identified."
+                "feedback": "True, in chromosome level assemblies, partitions are often broken up by chromosome and these chromosome to chromosome translocations may not be identified. If they are critical to your research, you might want to avoid partitioning."
             },
             {
-                "answer": "Your genome is polyploid and understanding the relationships between homoeologous chromosomes is important.",
+                "answer": "Your genome is polyploid.",
                 "correct": true,
-                "feedback": "True, polyploid organisms have muliple copies of each chromosome whose DNA sequence is related. Understanding presence/absence variation and shuffling of genetic material between homoeologs may be important to your downstream analyses."
+                "feedback": "True, polyploid organisms have muliple copies of each chromosome whose DNA sequence is related. If understanding presence/absence variation and shuffling of genetic material between homoeologs is important to your research, you might want to avoid paritioning."
             },
             {
-                "answer": "Your genome is more than 1 Gb.",
+                "answer": "Your genome is large (more than 1 Gb).",
                 "correct": false,
-                "feedback": "False, large genomes benefit from the parallelization that partitioning allows and their multiple chromosomes make natural break points for the partitions."
+                "feedback": "False, large genomes benefit from the parallelization that partitioning allows and their multiple chromosomes make natural breakpoints for the partitions. A large genome is not sufficient reason to avoid partitioning."
             }
         ]
     }
