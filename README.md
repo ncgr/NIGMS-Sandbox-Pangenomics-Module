@@ -54,7 +54,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 <summary>Installing Software</summary>
 
 All software for this module is installed via [Conda](https://docs.conda.io/en/latest/).
-To set up the module's Conda environment and install all the software, open a Terminal in JupyterLab and run the following command:
+To set up the module's Conda environment and install all the software, open a Terminal in JupyterLab (File -> New Launcher -> Terminal) and run the following command:
 ```bash
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
