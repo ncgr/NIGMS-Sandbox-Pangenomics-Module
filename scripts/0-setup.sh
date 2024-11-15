@@ -16,6 +16,13 @@ conda activate ${CONDA_ENV_NAME}
 # install pggb
 conda install -c conda-forge pggb -y
 
+# build the Bandage docker container
+docker build -t bandage ./bandage
+
+# create firewall rule for Bandage
+INSTANCE_NAME=$(curl http://metadata.google.internal/computeMetadata/v1/instance/name -H Metadata-Flavor:Google)
+gcloud compute firewall-rules create bandage --allow tcp:8443 --source-tags=$INSTANCE_NAME --source-ranges=0.0.0.0/0 --description="Port for viewing Bandage GUI via KasmVNC Docker container"
+
 # install other software here...
 
 # add the conda environment as a Jupyter kernel
