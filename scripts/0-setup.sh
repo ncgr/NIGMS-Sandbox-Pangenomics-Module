@@ -25,7 +25,7 @@ docker build -t bandage $SCRIPTS_PATH/../bandage
 
 # create firewall rule for Bandage
 INSTANCE_NAME=$(curl http://metadata.google.internal/computeMetadata/v1/instance/name -H Metadata-Flavor:Google)
-gcloud compute firewall-rules create bandage --allow tcp:8443 --source-tags=$INSTANCE_NAME --source-ranges=0.0.0.0/0 --description="Port for viewing Bandage GUI via KasmVNC Docker container"
+gcloud compute firewall-rules create $INSTANCE_NAME-bandage --allow tcp:8443 --source-tags=$INSTANCE_NAME --source-ranges=0.0.0.0/0 --description="Port for viewing Bandage GUI running in KasmVNC Docker container"
 
 # install the same BLAST as the Bandage docker container
 $SCRIPTS_PATH/../bandage/install-blast.sh
