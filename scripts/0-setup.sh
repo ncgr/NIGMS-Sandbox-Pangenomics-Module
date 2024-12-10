@@ -1,6 +1,10 @@
 # conda environment name
 CONDA_ENV_NAME="nigms-pangenomics"
 
+# absolute path to repo's scripts/ directory
+SCRIPTS_PATH="$(dirname -- "${BASH_SOURCE[0]}")"
+SCRIPTS_PATH="$(cd -- "$SCRIPTS_PATH" && pwd)"
+
 # update conda
 conda update -n base -c conda-forge conda -y
 
@@ -17,7 +21,7 @@ conda activate ${CONDA_ENV_NAME}
 conda install -c conda-forge pggb -y
 
 # build the Bandage docker container
-docker build -t bandage ./bandage
+docker build -t bandage $SCRIPTS_PATH/../bandage
 
 # create firewall rule for Bandage
 INSTANCE_NAME=$(curl http://metadata.google.internal/computeMetadata/v1/instance/name -H Metadata-Flavor:Google)
