@@ -27,6 +27,10 @@ docker build -t bandage $SCRIPTS_PATH/../bandage
 INSTANCE_NAME=$(curl http://metadata.google.internal/computeMetadata/v1/instance/name -H Metadata-Flavor:Google)
 gcloud compute firewall-rules create bandage --allow tcp:8443 --source-tags=$INSTANCE_NAME --source-ranges=0.0.0.0/0 --description="Port for viewing Bandage GUI via KasmVNC Docker container"
 
+# install the same BLAST as the Bandage docker container
+$SCRIPTS_PATH/../bandage/install-blast.sh
+conda env config vars set PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
+
 # install other software here...
 
 # add the conda environment as a Jupyter kernel
