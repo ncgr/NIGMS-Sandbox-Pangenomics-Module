@@ -8,6 +8,7 @@ RUN wget https://github.com/asl/BandageNG/releases/download/v2022.09/BandageNG-9
 RUN chmod a+x BandageNG-9eb84c2-x86_64.AppImage
 
 # install BLAST+
+COPY /install-blast.sh .
 RUN ./install-blast.sh
 ENV PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
 
