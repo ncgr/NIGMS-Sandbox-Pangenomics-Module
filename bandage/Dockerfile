@@ -12,6 +12,11 @@ COPY /install-blast.sh .
 RUN ./install-blast.sh
 ENV PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
 
+# autoruns Bandage
 COPY /root /
 
+# the container becomes unhealthy if Bandage stops running
+HEALTHCHECK --retries=1 CMD ps -aux | grep "Bandage" | grep -v "grep" || exit 1
+
+# keep the container running indefinitely
 CMD ["sleep", "infinity"]
