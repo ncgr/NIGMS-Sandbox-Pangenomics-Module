@@ -1,0 +1,15 @@
+services:
+  autoheal:
+    image: willfarrell/autoheal
+    restart: always
+    environment:
+      - AUTOHEAL_CONTAINER_LABEL=all
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  bandage:
+    build: .
+    restart: always
+    ports:
+      - "8443:3000"
+    volumes:
+      - ${HOME}:${HOME}:rw
