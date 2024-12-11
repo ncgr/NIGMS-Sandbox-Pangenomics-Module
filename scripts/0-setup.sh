@@ -1,3 +1,7 @@
+# install system dependencies
+sudo apt-get update
+sudo apt-get install docker-compose-plugin
+
 # conda environment name
 CONDA_ENV_NAME="nigms-pangenomics"
 
@@ -20,14 +24,14 @@ conda activate ${CONDA_ENV_NAME}
 # install pggb
 conda install -c conda-forge pggb -y
 
-# build the Bandage docker container
-docker build -t bandage $SCRIPTS_PATH/../bandage
+# build the Bandage container and run it as a daemon
+docker compose -f $SCRIPTS_PATH/../bandage/compose.yml up -d
 
 # create firewall rule for Bandage
 INSTANCE_NAME=$(curl http://metadata.google.internal/computeMetadata/v1/instance/name -H Metadata-Flavor:Google)
 gcloud compute firewall-rules create $INSTANCE_NAME-bandage --allow tcp:8443 --source-tags=$INSTANCE_NAME --source-ranges=0.0.0.0/0 --description="Port for viewing Bandage GUI running in KasmVNC Docker container"
 
-# install the same BLAST as the Bandage docker container
+# install the same BLAST as the Bandage container
 $SCRIPTS_PATH/../bandage/install-blast.sh
 conda env config vars set PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
 
