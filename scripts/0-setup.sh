@@ -41,3 +41,7 @@ conda env config vars set PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
 conda install ipykernel -y
 DL_ANACONDA_ENV_HOME="${DL_ANACONDA_HOME}/envs/${CONDA_ENV_NAME}"
 python -m ipykernel install --prefix "${DL_ANACONDA_ENV_HOME}" --name ${CONDA_ENV_NAME} --display-name "${CONDA_ENV_NAME}"
+
+# copy custom JupyterLab content to Jupyter config folder
+cp $SCRIPTS_PATH/../jupyter/jupyter_lab_config.py ~/.jupyter/
+cp -r $SCRIPTS_PATH/../jupyter/custom/ ~/.jupyter/
