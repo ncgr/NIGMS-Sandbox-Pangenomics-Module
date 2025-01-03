@@ -17,6 +17,14 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 
+# install the JupyterLab App Launcher extension
+conda activate jupyterlab4-preview
+pip install jupyter_app_launcher
+conda dactivate
+
+# copy the JupyterLab App Launcher config directory into the Jupyter path
+cp -r $SCRIPTS_PATH/jupyter_app_launcher/ ~/.local/share/jupyter/
+
 # create and activate a conda environment
 conda create -n ${CONDA_ENV_NAME} -y
 conda activate ${CONDA_ENV_NAME}
