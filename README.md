@@ -88,7 +88,7 @@ This notebook will introduce you to Jupyter notebooks and instruct you on how to
 
 ## **Software Requirements**
 
-The follow software is required for this module and will be installed as part of the `00-environment-setup.ipynb` submodule:
+The following software is required for this module and will be installed as part of the `00-environment-setup.ipynb` submodule:
 
 * [PGGB](https://github.com/pangenome/pggb)
 * [vg](https://github.com/vgteam/vg)
