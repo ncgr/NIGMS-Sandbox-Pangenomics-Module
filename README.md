@@ -80,8 +80,15 @@ Clicking on a program in this list will open the program in a new window in your
 
 ## **Getting Started**
 
-To begin, we must understand how this repository is organized.
+After following the [Before Starting](#before-starting) instructions, the JupyterLab launcher (File -> New Launcher) will contain a "Submodule Notebooks" section.
+This section contains an ordered list of the notebooks in this module, one for each submodule.
+Clicking on a submodule in this section will open the corresponding notebook.
+To begin, click on the "Environment Setup."
+
+Alternatively, you can use the JupyterLab file browser.
+Here is the location and file structure of the module notebooks:
 ```
+NIGMIS-Sandbox-Pangenomics-Module/
 └── module_notebooks/
     ├── 00-environment-setup.ipynb
     ├── 01-intro-to-pangenomics.ipynb
@@ -92,11 +99,9 @@ To begin, we must understand how this repository is organized.
     ├── 06-searching-graphs-with-blast.ipynb
     └── 07-visualization.ipynb
 ```
-
 `module_notebooks/` contains Jupyter notebooks - one for each submodule.
-To open a notebook, simply double-click on it in your Workbench instance.
+To open a notebook, simply double-click on it it.
 To begin this module, open the `00-environment-setup.ipynb` notebook.
-This notebook will introduce you to Jupyter notebooks and instruct you on how to install the software for this module.
 
 
 ## **Software Requirements**
