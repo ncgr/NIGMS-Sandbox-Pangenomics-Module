@@ -45,7 +45,6 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 3. Enable billing for your Google Cloud project
 4. Create a Vertex AI Workbench instance
 5. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
-6. [Clone this repository into JupyterLab](https://github.com/jupyterlab/jupyterlab-git#jupyterlab-git)
 
 </details>
 
@@ -53,14 +52,21 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
  
 <summary>Installing Software</summary>
 
-All software for this module is installed via [Conda](https://docs.conda.io/en/latest/).
-To set up the module's Conda environment and install all the software, open a Terminal in JupyterLab (File -> New Launcher -> Terminal) and run the following command:
+To install the software for this module, open a Terminal in JupyterLab (File -> New Launcher -> Terminal) and run the following commands:
 ```bash
+cd ~
+git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
-After the command complets, close the terminal and refresh the JupyterLab window in your web browser.
-There should now be a new kernal in the launcher called "conda-nigms-pangenomics".
+After the last command completes, close the terminal and restart the Workbench instance in the Vertex AI Workbench.
+
+There should now be a new kernal in the JupyterLab launcher called "nigms-pangenomics".
 This is the kernel you should use with every notebook in the module.
+The launcher should also contain two new sections: "Submodule Notebooks" and "Visualization Software".
+Submodule notebooks contains an ordered list of the notebooks in this module, one for each submodule.
+Clicking on a submodule will open the corresponding notebook.
+Visualization Software contains a list of visualization software used in this module.
+Clicking on a program in this list will open the program in a new window in your Web Browser.
 
 </details>
 
