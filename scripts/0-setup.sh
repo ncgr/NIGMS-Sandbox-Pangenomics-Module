@@ -25,6 +25,9 @@ conda dactivate
 # copy the JupyterLab App Launcher config directory into the Jupyter path
 cp -r $SCRIPTS_PATH/jupyter_app_launcher/ ~/.local/share/jupyter/
 
+# copy the bash_profile to the Jupyter home directory
+cp -r $SCRIPTS_PATH/.bash_profile ~/
+
 # create and activate a conda environment
 conda create -n ${CONDA_ENV_NAME} -y
 conda activate ${CONDA_ENV_NAME}
