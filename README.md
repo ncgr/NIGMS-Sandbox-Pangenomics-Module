@@ -43,8 +43,15 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 1. Create a Google Cloud account
 2. Create a Google Cloud project
 3. Enable billing for your Google Cloud project
-4. Create a Vertex AI Workbench instance
-5. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
+4. Go to Vertex AI Workbench and create a new instance using "CREATE NEW" -> "ADVANCED OPTIONS" and use the following configurations:
+   * Details:<br/>&emsp;Region: us-east4<br/>&emsp;Zone: us-east4-a<br/>&emsp;Workbench type:<br/>&emsp;&emsp;Type: Instance
+   * Environment:<br/>&emsp;JupyterLab Version: JupyterLab 4.x
+   * Machine type:<br/>&emsp;Series: N2<br/>&emsp;Machine type: n2-standard-4<br/>&emsp;Idle shutdown:<br/>&emsp;&emsp;Enable Idle Shutdown: Checked<br/>&emsp;&emsp;Time of inactivity before shutdown (Minutes): 30
+   * Disks: Use default settings
+   * Networking:<br/>&emsp;Assign external IP address: Checked<br/>&emsp;Allow proxy access: Checked
+   * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;Terminal access: Checked
+   * System health: Use default settings
+6. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
 
 </details>
 
@@ -52,13 +59,13 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
  
 <summary>Installing Software</summary>
 
-To install the software for this module, open a Terminal in JupyterLab (File -> New Launcher -> Terminal) and run the following commands:
+To install the software for this module in JupyterLab, open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
 ```bash
 cd ~
 git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
-After the last command completes, close the terminal and restart the Workbench instance in the Vertex AI Workbench.
+After the last command completes, close the terminal and restart the instance in the Vertex AI Workbench.
 
 There should now be a new kernal in the JupyterLab launcher called "nigms-pangenomics".
 This is the kernel you should use with every notebook in the module.
