@@ -12,6 +12,7 @@
 + [Data](#data)
 + [Funding](#funding)
 + [License for Data](#license-for-data)
++ [Wrapping Up](#wrapping-up)
 
 ## **Overview**
 
@@ -106,12 +107,15 @@ To begin this module, open the `00-environment-setup.ipynb` notebook.
 
 ## **Software Requirements**
 
-The following software is required for this module and will be installed as part of the `00-environment-setup.ipynb` submodule:
+The following software is required for this module:
 
 * [PGGB](https://github.com/pangenome/pggb)
 * [vg](https://github.com/vgteam/vg)
 * [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK569861/)
 * [Bandage](https://rrwick.github.io/Bandage/)
+* [Samtools](https://www.htslib.org/)
+
+All of these programs can be installed in JupterLab running on the GCP Vertex AI Workbench following the Installing Software instructions in the [Before Starting](#before-starting) section.
 
 
 ## **Architecture Design**
@@ -125,3 +129,4 @@ The following software is required for this module and will be installed as part
 
 ## **License for Data**
 
+## **Wrapping Up**
