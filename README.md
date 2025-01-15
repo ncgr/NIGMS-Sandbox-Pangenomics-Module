@@ -12,6 +12,7 @@
 + [Data](#data)
 + [Funding](#funding)
 + [License for Data](#license-for-data)
++ [Wrapping Up](#wrapping-up)
 
 ## **Overview**
 
@@ -43,9 +44,15 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 1. Create a Google Cloud account
 2. Create a Google Cloud project
 3. Enable billing for your Google Cloud project
-4. Create a Vertex AI Workbench instance
-5. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
-6. [Clone this repository into JupyterLab](https://github.com/jupyterlab/jupyterlab-git#jupyterlab-git)
+4. Go to Vertex AI Workbench and create a new instance using "CREATE NEW" -> "ADVANCED OPTIONS" and use the following configurations:
+   * Details:<br/>&emsp;Region: us-east4<br/>&emsp;Zone: us-east4-a<br/>&emsp;Workbench type:<br/>&emsp;&emsp;Type: Instance
+   * Environment:<br/>&emsp;JupyterLab Version: JupyterLab 4.x
+   * Machine type:<br/>&emsp;Series: N2<br/>&emsp;Machine type: n2-standard-4<br/>&emsp;Idle shutdown:<br/>&emsp;&emsp;Enable Idle Shutdown: Checked<br/>&emsp;&emsp;Time of inactivity before shutdown (Minutes): 30
+   * Disks: Use default settings
+   * Networking:<br/>&emsp;Assign external IP address: Checked<br/>&emsp;Allow proxy access: Checked
+   * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;Terminal access: Checked
+   * System health: Use default settings
+6. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
 
 </details>
 
@@ -53,22 +60,36 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
  
 <summary>Installing Software</summary>
 
-All software for this module is installed via [Conda](https://docs.conda.io/en/latest/).
-To set up the module's Conda environment and install all the software, open a Terminal in JupyterLab (File -> New Launcher -> Terminal) and run the following command:
+To install the software for this module in JupyterLab, open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
 ```bash
+cd ~
+git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
-After the command complets, close the terminal and refresh the JupyterLab window in your web browser.
-There should now be a new kernal in the launcher called "conda-nigms-pangenomics".
+After the last command completes, close the terminal and restart the instance in the Vertex AI Workbench.
+
+There should now be a new kernal in the JupyterLab launcher called "nigms-pangenomics".
 This is the kernel you should use with every notebook in the module.
+The launcher should also contain two new sections: "Submodule Notebooks" and "Visualization Software".
+Submodule notebooks contains an ordered list of the notebooks in this module, one for each submodule.
+Clicking on a submodule will open the corresponding notebook.
+Visualization Software contains a list of visualization software used in this module.
+Clicking on a program in this list will open the program in a new window in your Web Browser.
 
 </details>
 
 
 ## **Getting Started**
 
-To begin, we must understand how this repository is organized.
+After following the [Before Starting](#before-starting) instructions, the JupyterLab launcher (File -> New Launcher) will contain a "Submodule Notebooks" section.
+This section contains an ordered list of the notebooks in this module, one for each submodule.
+Clicking on a submodule in this section will open the corresponding notebook.
+To begin, click on the "Environment Setup."
+
+Alternatively, you can use the JupyterLab file browser.
+Here is the location and file structure of the module notebooks:
 ```
+NIGMIS-Sandbox-Pangenomics-Module/
 └── module_notebooks/
     ├── 00-environment-setup.ipynb
     ├── 01-intro-to-pangenomics.ipynb
@@ -79,21 +100,22 @@ To begin, we must understand how this repository is organized.
     ├── 06-searching-graphs-with-blast.ipynb
     └── 07-visualization.ipynb
 ```
-
 `module_notebooks/` contains Jupyter notebooks - one for each submodule.
-To open a notebook, simply double-click on it in your Workbench instance.
+To open a notebook, simply double-click on it it.
 To begin this module, open the `00-environment-setup.ipynb` notebook.
-This notebook will introduce you to Jupyter notebooks and instruct you on how to install the software for this module.
 
 
 ## **Software Requirements**
 
-The following software is required for this module and will be installed as part of the `00-environment-setup.ipynb` submodule:
+The following software is required for this module:
 
 * [PGGB](https://github.com/pangenome/pggb)
 * [vg](https://github.com/vgteam/vg)
 * [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK569861/)
 * [Bandage](https://rrwick.github.io/Bandage/)
+* [Samtools](https://www.htslib.org/)
+
+All of these programs can be installed in JupterLab running on the GCP Vertex AI Workbench following the Installing Software instructions in the [Before Starting](#before-starting) section.
 
 
 ## **Architecture Design**
@@ -107,3 +129,4 @@ The following software is required for this module and will be installed as part
 
 ## **License for Data**
 
+## **Wrapping Up**
