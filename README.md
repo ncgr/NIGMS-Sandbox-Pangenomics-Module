@@ -50,7 +50,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
    * Machine type:<br/>&emsp;Series: N2<br/>&emsp;Machine type: n2-standard-4<br/>&emsp;Idle shutdown:<br/>&emsp;&emsp;Enable Idle Shutdown: Checked<br/>&emsp;&emsp;Time of inactivity before shutdown (Minutes): 30
    * Disks: Use default settings
    * Networking:<br/>&emsp;Assign external IP address: Checked<br/>&emsp;Allow proxy access: Checked
-   * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;Terminal access: Checked
+   * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;File downloading: Checked<br/>&emsp;&emsp;Terminal access: Checked
    * System health: Use default settings
 6. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
 
