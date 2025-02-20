@@ -50,13 +50,14 @@ gcloud compute firewall-rules create $INSTANCE_NAME-bandage --allow tcp:8443 --s
 
 # install the same BLAST as the Bandage container
 $SCRIPTS_PATH/../bandage/install-blast.sh
-conda env config vars set PATH="$PATH:$PWD/ncbi-blast-2.16.0+/bin"
 
 # install SRA Tools
 $SCRIPTS_PATH/1-install-sra-tools.sh
-conda env config vars set PATH="$PATH:/usr/local/ncbi/sra-tools/bin"
 
 # install other software here...
+
+# set conda environment variables
+conda env config vars set PATH="$PATH:~/ncbi-blast-2.16.0+/bin:/usr/local/ncbi/sra-tools/bin"
 
 # add the conda environment as a Jupyter kernel
 conda install ipykernel -y
