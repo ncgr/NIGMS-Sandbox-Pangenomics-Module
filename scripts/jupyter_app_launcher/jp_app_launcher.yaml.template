@@ -25,50 +25,50 @@
       args:
         path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/02-building-graphs-with-pggb.ipynb
   catalog: Submodule Notebooks
-- title: Indexing Graphs with VG
-  description: This submodule covers how to index pangenome graphs with VG
+- title: Searching Graphs with BLAST
+  description: This submodule covers how to search pangenome graphs with BLAST
   type: jupyterlab-commands
   source:
     - label: Command 4
       id: 'filebrowser:open-path'
       args:
-        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/03-indexing-graphs-with-vg.ipynb
-  catalog: Submodule Notebooks
-- title: Read Mapping with VG
-  description: This submodule covers how to map reads to pangenome graphs with VG
-  type: jupyterlab-commands
-  source:
-    - label: Command 5
-      id: 'filebrowser:open-path'
-      args:
-        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/04-read-mapping-with-vg.ipynb
-  catalog: Submodule Notebooks
-- title: Variant Calling with VG
-  description: This submodule covers how to call variants on reads mapped to a pangenome graph with VG
-  type: jupyterlab-commands
-  source:
-    - label: Command 6
-      id: 'filebrowser:open-path'
-      args:
-        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/05-variant-calling-with-vg.ipynb
-  catalog: Submodule Notebooks
-- title: Searching Graphs with BLAST
-  description: This submodule covers how to search pangenome graphs with BLAST
-  type: jupyterlab-commands
-  source:
-    - label: Command 7
-      id: 'filebrowser:open-path'
-      args:
-        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/06-searching-graphs-with-blast.ipynb
+        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/03-searching-graphs-with-blast.ipynb
   catalog: Submodule Notebooks
 - title: Visualizing Graphs with Bandage
   description: This submodule covers how to visualize pangenome graphs with Bandage
   type: jupyterlab-commands
   source:
+    - label: Command 5
+      id: 'filebrowser:open-path'
+      args:
+        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/04-visualization.ipynb
+  catalog: Submodule Notebooks
+- title: Indexing Graphs with VG
+  description: This submodule covers how to index pangenome graphs with VG
+  type: jupyterlab-commands
+  source:
+    - label: Command 6
+      id: 'filebrowser:open-path'
+      args:
+        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/05-indexing-graphs-with-vg.ipynb
+  catalog: Submodule Notebooks
+- title: Read Mapping with VG
+  description: This submodule covers how to map reads to pangenome graphs with VG
+  type: jupyterlab-commands
+  source:
+    - label: Command 7
+      id: 'filebrowser:open-path'
+      args:
+        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/06-read-mapping-with-vg.ipynb
+  catalog: Submodule Notebooks
+- title: Variant Calling with VG
+  description: This submodule covers how to call variants on reads mapped to a pangenome graph with VG
+  type: jupyterlab-commands
+  source:
     - label: Command 8
       id: 'filebrowser:open-path'
       args:
-        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/07-visualization.ipynb
+        path: NIGMS-Sandbox-Pangenomics-Module/module_notebooks/07-variant-calling-with-vg.ipynb
   catalog: Submodule Notebooks
 - title: Bandage
   description: Opens Bandage via KasmVNC in a new window
