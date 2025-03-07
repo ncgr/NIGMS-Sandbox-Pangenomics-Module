@@ -1,3 +1,5 @@
+![Modle Anchor](images/anchor.png)
+
 # Pangenomics
 ---------------------------------
 
