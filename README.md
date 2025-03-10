@@ -1,4 +1,6 @@
-# Pangenomics
+![Modle Anchor](images/anchor.png)
+
+# NIGMS Sandbox: Pangenomics Module
 ---------------------------------
 
 ## **Contents**
@@ -94,11 +96,11 @@ NIGMIS-Sandbox-Pangenomics-Module/
     ├── 00-environment-setup.ipynb
     ├── 01-intro-to-pangenomics.ipynb
     ├── 02-building-graphs-with-pggb.ipynb
-    ├── 03-indexing-graphs-with-vg.ipynb
-    ├── 04-read-mapping-with-vg.ipynb
-    ├── 05-variant-calling-with-vg.ipynb
-    ├── 06-searching-graphs-with-blast.ipynb
-    └── 07-visualization.ipynb
+    ├── 03-searching-graphs-with-blast.ipynb
+    ├── 04-visualization.ipynb
+    ├── 05-indexing-graphs-with-vg.ipynb
+    ├── 06-read-mapping-with-vg.ipynb
+    └── 07-variant-calling-with-vg.ipynb
 ```
 `module_notebooks/` contains Jupyter notebooks - one for each submodule.
 To open a notebook, simply double-click on it it.
