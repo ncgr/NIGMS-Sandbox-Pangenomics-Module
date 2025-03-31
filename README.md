@@ -46,7 +46,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 1. Create a Google Cloud account
 2. Create a Google Cloud project
 3. Enable billing for your Google Cloud project
-4. Go to Vertex AI Workbench and create a new instance using "CREATE NEW" -> "ADVANCED OPTIONS" and use the following configurations. Any configuration not explicitly mentioned below should use its default setting.
+4. Go to Vertex AI Workbench and create a new instance using "CREATE NEW" -> "ADVANCED OPTIONS" and use the following configurations. **Any configuration not explicitly mentioned below should use its default setting**.
    * Details:<br/>&emsp;Region: us-east4<br/>&emsp;Zone: us-east4-a<br/>&emsp;Workbench type:<br/>&emsp;&emsp;Type: Instance
    * Environment:<br/>&emsp;JupyterLab Version: JupyterLab 4.x
    * Machine type:<br/>&emsp;Series: N2<br/>&emsp;Machine type: n2-standard-4<br/>&emsp;Idle shutdown:<br/>&emsp;&emsp;Enable Idle Shutdown: Checked<br/>&emsp;&emsp;Time of inactivity before shutdown (Minutes): 60
