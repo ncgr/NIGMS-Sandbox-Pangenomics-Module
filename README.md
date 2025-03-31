@@ -135,4 +135,13 @@ All of these programs can be installed in JupterLab running on the GCP Vertex AI
 
 ## **License for Data**
 
+Text and materials are licensed under a Creative Commons CC-BY-NC-SA license.
+The license allows you to copy, remix, and redistribute any of our publicly available materials, under the condition that you attribute the work (details in the license) and do not make profits from it.
+More information is available [here](https://tilburgsciencehub.com/about).
+
+![Creative commons license](images/license-buttons.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
 ## **Wrapping Up**
