@@ -132,6 +132,9 @@ All of these programs can be installed in JupterLab running on the GCP Vertex AI
 
 ## **Funding**
 
+This module was developed by the National Center for Genome Resources (NCGR) as part of the Data Science Core for the New Mexico IDeA Network of Biomedical Research Excellence (NM-INBRE).
+The work was supported by National Institutes of Health (NIH) grant number P20GM103451 and NIH supplement award number Q02588.
+
 
 ## **License for Data**
 
