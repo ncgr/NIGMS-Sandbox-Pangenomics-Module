@@ -124,6 +124,8 @@ All of these programs can be installed in JupterLab running on the GCP Vertex AI
 
 ## **Architecture Design**
 
+![Modle Anchor](images/architecture.png)
+
 
 ## **Data**
 
