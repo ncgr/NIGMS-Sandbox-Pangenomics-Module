@@ -126,6 +126,21 @@ All of these programs can be installed in JupterLab running on the GCP Vertex AI
 
 ![Modle Anchor](images/architecture.png)
 
+The architecture of this workshop is composed of 3 major parts: 1) input data from storage, 2) an analysis pipeline run on the GCP Vertex AI Workbench, and 3) output data to storage, which itself is used as input in subsequent steps of the pipeline.
+The analysis pipeline part (2) is composed of the following submodules:
+
+<ol type="a">
+  <li>Setting up the environment for the module</li>
+  <li>An introduction to graphical pangenomics</li>
+  <li>A tutorial on how to build a pangenome graph using PGGB</li>
+  <li>A tutorial on how to search a pangenome graph using BLAST</li>
+  <li>A tutorial on how to visualize a pangenome graph using Bandage</li>
+  <li>A tutorial on indexing pangenome graphs with vg for downstream analysis</li>
+  <li>A tutorial on mapping reads to an indexed pangenome graph</li>
+  <li>A tutorial on calling variants on reads mapped to a pangenome graph</li>
+</ol>
+
+All modules in the pipeline use a custom `nigms-pangenomics` Jupyter kernel, which can be installed following the instructions in the [Before Starting](#before-starting) section.
 
 ## **Data**
 
