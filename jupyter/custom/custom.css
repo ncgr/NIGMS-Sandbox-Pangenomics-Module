@@ -3,7 +3,7 @@ figure {
   display: flex;
   flex-flow: column;
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto 1em auto;
 }
 
 figure img {
