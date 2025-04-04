@@ -140,10 +140,21 @@ The analysis pipeline part (2) is composed of the following submodules:
   <li>A tutorial on calling variants on reads mapped to a pangenome graph</li>
 </ol>
 
-All modules in the pipeline use a custom `nigms-pangenomics` Jupyter kernel, which can be installed following the instructions in the [Before Starting](#before-starting) section.
+All submodules in the pipeline use a custom `nigms-pangenomics` Jupyter kernel, which can be installed following the instructions in the [Before Starting](#before-starting) section.
 
 ## **Data**
 
+This module uses the following data:
+
+* 3 genome assemblies acquired from the [Yeast Population Reference Panel (YPRP)](https://yjx1217.github.io/Yeast_PacBio_2016/welcome/)
+  * S288C (reference)
+  * SK1
+  * Y12
+* Illumina paired-end reads acquired from NCBI
+  * SK1
+* Gene sequences acquired from Saccharomyces Genome Database
+  * CUP1-1
+  * YHR053C
 
 ## **Funding**
 
