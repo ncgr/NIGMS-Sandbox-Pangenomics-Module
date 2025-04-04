@@ -174,3 +174,15 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 
 ## **Wrapping Up**
+
+Once you have completed the module, we recommend deleting the Vertex AI Workbench VM you created since it costs money even when it's not running.
+
+You can download of copy of your work from this module before deleting the VM by creating a `.zip` file of your copy of the module.
+To do this, in JupyterLab open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
+```bash
+cd ~
+zip -r NIGMS-Sandbox-Pangenomics-Module.zip NIGMS-Sandbox-Pangenomics-Module
+```
+You can then download this file from JupyterLab by opening the File Browser in the left menu, clicking the Home (`/`) button, right-clicking on the `NIGMS-Sandbox-Pangenomics-Module.zip` file and selecting "Download" in the menu that appears.
+
+When you are ready to delete your Vertex AI Workbench VM, go into the Vertex AI Workbench, check the box next to the VM that you want to delete, and click the Delete button in the menu that appears at the top.
