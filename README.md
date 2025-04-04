@@ -15,6 +15,7 @@
 + [Funding](#funding)
 + [License for Data](#license-for-data)
 + [Wrapping Up](#wrapping-up)
++ [Additional Resources](#additional-resources)
 
 ## **Overview**
 
@@ -186,3 +187,9 @@ zip -r NIGMS-Sandbox-Pangenomics-Module.zip NIGMS-Sandbox-Pangenomics-Module
 You can then download this file from JupyterLab by opening the File Browser in the left menu, clicking the Home (`/`) button, right-clicking on the `NIGMS-Sandbox-Pangenomics-Module.zip` file and selecting "Download" in the menu that appears.
 
 When you are ready to delete your Vertex AI Workbench VM, go into the Vertex AI Workbench, check the box next to the VM that you want to delete, and click the Delete button in the menu that appears at the top.
+
+## **Additional Resources**
+
+This module is based on a workshop offered by the National Center for Genome Resources (NCGR) as part of the Data Science Core for the New Mexico IDeA Network of Biomedical Research Excellence (NM-INBRE).
+The workshop covers all of the material in this module and much more.
+See the [NM-INBRE Data Science Core webpage](https://nminbre.org/data-science-core/) for details.
