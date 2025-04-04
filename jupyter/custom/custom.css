@@ -1,3 +1,17 @@
 figure {
-	border: solid 1px pink;
+  border: 1px #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+figure img {
+  max-width: 600px;
+}
+
+figure figcaption {
+  border-top: 1px #c0c0c0 solid;
+  background-color: #D3D3D3;
+  text-align: center;
 }
