@@ -20,8 +20,8 @@
 ## **Overview**
 
 This module will introduce you to (graphical) pangenomics and walk you through a pangenomics pipeline.
-Specifically, you will learn how to build a pangenome graph, map reads to the graph, call variants on the mapped reads, and visualize the graph.
-All analyses will be performed on the Google Cloud Platform.
+Specifically, you will learn how to build a pangenome graph, index the graph for analysis, map reads to the graph, call variants on the mapped reads, and visualize the graph.
+All analyses will be performed on the Google Cloud Platform (GCP).
 The estimated cost for the complete module is $?
 
 
@@ -47,7 +47,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 1. Create a Google Cloud account
 2. Create a Google Cloud project
 3. Enable billing for your Google Cloud project
-4. Go to Vertex AI Workbench and create a new instance using "CREATE NEW" -> "ADVANCED OPTIONS". The configurations for each page are described below. Click the "Continue" button at the bottom of each page to go to the next page. **Any configuration not explicitly mentioned below should use its default setting**.
+4. Go to Vertex AI Workbench and create a new VM instance using "CREATE NEW" -> "ADVANCED OPTIONS". The configurations for each page are described below. Click the "Continue" button at the bottom of each page to go to the next page. **Any configuration not explicitly mentioned below should use its default setting**.
    * Details:<br/>&emsp;Name: nigms-pangenomics-module (this is optional; you can use whatever name you want or the default)<br/>&emsp;Region: us-east4<br/>&emsp;Zone: us-east4-a<br/>&emsp;Workbench type:<br/>&emsp;&emsp;Type: Instance
    * Environment:<br/>&emsp;JupyterLab Version: JupyterLab 4.x
    * Machine type:<br/>&emsp;Series: N2<br/>&emsp;Machine type: n2-standard-4<br/>&emsp;Idle shutdown:<br/>&emsp;&emsp;Enable Idle Shutdown: Checked<br/>&emsp;&emsp;Time of inactivity before shutdown (Minutes): 60
@@ -56,8 +56,8 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
    * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;File downloading: Checked<br/>&emsp;&emsp;Terminal access: Checked
    * System health: Use default settings
   
-   The last configuration page - System health - will not have a "Continue" button. Instead, use the "Create" button below the page to create the Vertex AI Workbench instance you just configured.
-6. Click "OPEN JUPYTERLAB" on your instance to open JupyterLab
+   The last configuration page - System health - will not have a "Continue" button. Instead, use the "Create" button below the page to create the Vertex AI Workbench VM instance you just configured.
+6. Click "OPEN JUPYTERLAB" on your VM instance to open JupyterLab
 
 </details>
 
@@ -65,13 +65,13 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
  
 <summary>Installing Software</summary>
 
-To install the software for this module in JupyterLab, open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
+To install the software for this module in JupyterLab, open a Terminal ("File" -> "New Launcher" -> "Terminal") and run the following commands:
 ```bash
 cd ~
 git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git NIGMS-Sandbox-Pangenomics-Module
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
-After the last command completes, close the terminal and restart the instance in the Vertex AI Workbench.
+After the last command completes, close the terminal and restart the VM instance in the Vertex AI Workbench.
 
 There should now be a new kernal in the JupyterLab launcher called "nigms-pangenomics".
 This is the kernel you should use with every notebook in the module.
@@ -86,10 +86,10 @@ Clicking on a program in this list will open the program in a new window in your
 
 ## **Getting Started**
 
-After following the [Before Starting](#before-starting) instructions, the JupyterLab launcher (File -> New Launcher) will contain a "Submodule Notebooks" section.
+After following the [Before Starting](#before-starting) instructions, the JupyterLab launcher ("File" -> "New Launcher") will contain a "Submodule Notebooks" section.
 This section contains an ordered list of the notebooks in this module, one for each submodule.
 Clicking on a submodule in this section will open the corresponding notebook.
-To begin, click on the "Environment Setup."
+To begin, click on the "Environment Setup" notebook.
 
 Alternatively, you can use the JupyterLab file browser.
 Here is the location and file structure of the module notebooks:
@@ -153,7 +153,7 @@ This module uses the following data:
   * Y12
 * Illumina paired-end reads acquired from NCBI
   * SK1
-* Gene sequences acquired from Saccharomyces Genome Database
+* Gene sequences acquired from [Saccharomyces Genome Database (SGD)](https://www.yeastgenome.org/)
   * CUP1-1
   * YHR053C
 
@@ -176,17 +176,17 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 ## **Wrapping Up**
 
-Once you have completed the module, we recommend deleting the Vertex AI Workbench VM you created since it costs money even when it's not running.
+Once you have completed the module, we recommend deleting the Vertex AI Workbench VM instance you created since it costs money even when it's not running.
 
-You can download of copy of your work from this module before deleting the VM by creating a `.zip` file of your copy of the module.
-To do this, in JupyterLab open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
+You can download a copy of your work from this module before deleting the VM by creating a `.zip` file of your copy of this repository.
+To do this, in JupyterLab open a Terminal ("File" -> "New Launcher" -> "Terminal") and run the following commands:
 ```bash
 cd ~
 zip -r NIGMS-Sandbox-Pangenomics-Module.zip NIGMS-Sandbox-Pangenomics-Module
 ```
 You can then download this file from JupyterLab by opening the File Browser in the left menu, clicking the Home (`/`) button, right-clicking on the `NIGMS-Sandbox-Pangenomics-Module.zip` file and selecting "Download" in the menu that appears.
 
-When you are ready to delete your Vertex AI Workbench VM, go into the Vertex AI Workbench, check the box next to the VM that you want to delete, and click the Delete button in the menu that appears at the top.
+When you are ready to delete your Vertex AI Workbench VM instance, go into the Vertex AI Workbench, check the box next to the VM instance that you want to delete, and click the "Delete" button in the menu that appears at the top.
 
 ## **Additional Resources**
 
