@@ -68,7 +68,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
 To install the software for this module in JupyterLab, open a Terminal (File -> New Launcher -> Terminal) and run the following commands:
 ```bash
 cd ~
-git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git
+git clone https://github.com/ncgr/NIGMS-Sandbox-Pangenomics-Module.git NIGMS-Sandbox-Pangenomics-Module
 bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
 After the last command completes, close the terminal and restart the instance in the Vertex AI Workbench.
