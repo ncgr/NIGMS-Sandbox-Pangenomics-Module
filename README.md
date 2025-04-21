@@ -16,6 +16,7 @@
 + [License for Data](#license-for-data)
 + [Wrapping Up](#wrapping-up)
 + [Additional Resources](#additional-resources)
++ [Troubleshooting](#troubleshooting)
 
 ## **Overview**
 
@@ -193,3 +194,18 @@ When you are ready to delete your Vertex AI Workbench VM instance, go into the V
 This module is based on a workshop offered by the National Center for Genome Resources (NCGR) as part of the Data Science Core for the New Mexico IDeA Network of Biomedical Research Excellence (NM-INBRE).
 The workshop covers all of the material in this module and much more.
 See the [NM-INBRE Data Science Core webpage](https://nminbre.org/data-science-core/) for details.
+
+## Troubleshooting
+
+<details>
+  
+<summary>Resetting Bandage</summary>
+
+Sometimes the Bandage software can break, i.e. there will be a message that say "KasmVNC encountered an error."
+When this occurs, you can reset the Bandage software by opening a Terminal in JupyterLab ("File" -> "New Launcher" -> "Terminal") and running the following commands:
+```bash
+cd ~
+docker compose -f NIGMS-Sandbox-Pangenomics-Module/bandage/compose.yml up -d --build --force-recreate
+```
+
+</details>
