@@ -12,4 +12,4 @@ services:
     ports:
       - "8443:3000"
     volumes:
-      - ${HOME}:${HOME}:rw
+      - ${HOME}/NIGMS-Sandbox-Pangenomics-Module:${HOME}/NIGMS-Sandbox-Pangenomics-Module:rw
