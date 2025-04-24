@@ -33,6 +33,8 @@ Compared to a reference genome, a pangenome is a less biased, more comprehensive
 While the pangenome may provide greater insight into questions related to the genetic and genomic nature of a species, these data require the use of bioinformatics tools that are different than those typically used on reference genomes.
 This module aims to introduce you to the idea of *pangenome graphs* and the bioinformatics tools used for their analysis.
 
+This video XXX has a brief overview of pangenomics and this module.
+
 
 ## **Before Starting**
 
