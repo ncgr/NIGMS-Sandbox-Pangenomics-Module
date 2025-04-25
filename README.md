@@ -23,7 +23,8 @@
 This module will introduce you to (graphical) pangenomics and walk you through a pangenomics pipeline.
 Specifically, you will learn how to build a pangenome graph, index the graph for analysis, map reads to the graph, call variants on the mapped reads, and visualize the graph.
 All analyses will be performed on the Google Cloud Platform (GCP).
-The estimated cost for the complete module is $?
+The estimated cost to complete the whole module is about $2, assuming you tear down all resources upon completion.
+See the [Wrapping Up](#wrapping-up) section for details on how to tear down resources.
 
 
 ## **Background**
