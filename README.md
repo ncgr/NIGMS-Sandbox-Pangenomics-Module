@@ -77,8 +77,8 @@ bash -i ./NIGMS-Sandbox-Pangenomics-Module/scripts/0-setup.sh
 ```
 After the last command completes, close the terminal and restart the VM instance in the Vertex AI Workbench.
 
-There should now be a new kernal in the JupyterLab launcher called "nigms-pangenomics".
-This is the kernel you should use with every notebook in the module.
+There should now be a new kernal in the JupyterLab launcher tab called "nigms-pangenomics". If you do not see the Launcher tab open a new one ("File" -> "New Launcher" -> "Terminal").
+This is the kernel you should use with every notebook in the module (when you open the notebook, the kernal will be listed in the upper right corner).
 The launcher should also contain two new sections: "Submodule Notebooks" and "Visualization Software".
 Submodule notebooks contains an ordered list of the notebooks in this module, one for each submodule.
 Clicking on a submodule will open the corresponding notebook.
