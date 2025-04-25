@@ -60,7 +60,7 @@ See the [Vertex AI Quickstart instructions](https://cloud.google.com/vertex-ai/d
    * IAM and security<br/>&emsp;Security options:<br/>&emsp;&emsp;Root access to the instance: Checked<br/>&emsp;&emsp;File downloading: Checked<br/>&emsp;&emsp;Terminal access: Checked
    * System health: Use default settings
   
-   The last configuration page - System health - will not have a "Continue" button. Instead, use the "Create" button below the page to create the Vertex AI Workbench VM instance you just configured.
+   The last configuration page - System health - will not have a "Continue" button. Instead, use the "Create" button below the page to create the Vertex AI Workbench VM instance you just configured. It will have a blue loading circle. Once the green checkmark has appeared, your Vertex AI Workbench VM instance has been created.
 6. Click "OPEN JUPYTERLAB" on your VM instance to open JupyterLab
 
 </details>
