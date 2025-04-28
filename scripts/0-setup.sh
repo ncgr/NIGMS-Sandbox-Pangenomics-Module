@@ -33,13 +33,10 @@ conda create -n ${CONDA_ENV_NAME} -y
 conda activate ${CONDA_ENV_NAME}
 
 # install pggb
-conda install -c conda-forge pggb -y
+conda install -c conda-forge pggb=0.7.4 -y
 
 # install gfatools
-conda install gfatools
-
-# install seqtk
-conda install seqtk
+conda install gfatools=0.5 -y
 
 # build the Bandage container and run it as a daemon
 docker compose -f $SCRIPTS_PATH/../bandage/compose.yml up -d
