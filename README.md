@@ -194,9 +194,9 @@ When you are ready to delete your Vertex AI Workbench VM instance, go into the V
 
 ## **Additional Resources**
 
-This module is based on a workshop offered by the National Center for Genome Resources (NCGR) as part of the Data Science Core for the New Mexico IDeA Network of Biomedical Research Excellence (NM-INBRE).
-The workshop covers all of the material in this module and much more.
-See the [NM-INBRE Data Science Core webpage](https://nminbre.org/data-science-core/) for details.
+This module is based on a workshop offered by the National Center for Genome Resources (NCGR) as part of the [Data Science Core for the New Mexico IDeA Network of Biomedical Research Excellence (NM-INBRE)](https://nminbre.org/data-science-core/).
+The workshop covers all of the material in this module and much more. See [NCGR's workshop webpage](https://inbre.ncgr.org/ncgr-workshops/) for details.
+
 
 ## Troubleshooting
 
