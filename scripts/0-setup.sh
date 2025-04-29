@@ -33,7 +33,7 @@ conda create -n ${CONDA_ENV_NAME} -y
 conda activate ${CONDA_ENV_NAME}
 
 # install pggb
-conda install -c conda-forge pggb=0.7.4 -y
+conda install -c conda-forge pggb=0.7.2 -y
 
 # install gfatools
 conda install gfatools=0.5 -y
