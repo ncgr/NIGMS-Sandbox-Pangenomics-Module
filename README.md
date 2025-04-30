@@ -202,6 +202,19 @@ The workshop covers all of the material in this module and much more. See [NCGR'
 
 <details>
   
+<summary>command not found</summary>
+
+If you try to run a code cell and you get the error `command not found`, then there's a good chance that you're not using the correct Jupyter kernel.
+To change what kernel you're using, in JupyterLab click "Kernel" -> "Change Kernel..."
+In the pop-up that appears, select "nigms-pangenomics" in the dropdown and then click the "Select" button.
+If "nigms-pangenomics" is not an option, then you need to setup the environment.
+Do this by following the "Installing Software" instructions in the [Before Starting](#before-starting) section of this readme.
+Note that you must restart your Vertex AI Workbench VM instance after completing the setup to be able to use the "nigms-pangenomics" kernel.
+
+</details>
+
+<details>
+  
 <summary>Resetting Bandage</summary>
 
 Sometimes the Bandage software can break, i.e. there will be a message that say "KasmVNC encountered an error."
