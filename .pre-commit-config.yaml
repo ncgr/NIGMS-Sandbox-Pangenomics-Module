@@ -1,5 +1,5 @@
 repos:
   - repo: https://github.com/srstevenson/nb-clean
-    rev: 4.0.1
+    rev: v5.0.0
     hooks:
       - id: nb-clean
